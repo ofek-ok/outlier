@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* OUTLIER Brand Color Palette */
+    --color-offwhite: #F3F0E9;
+    --color-offwhite-alt: #EAE5DB;
+    --color-charcoal: #252724;
+    --color-charcoal-dark: #1D1F1C;
+    --color-softblack: #151515;
+    --color-olive: #565A50;
+    --color-stone: #C8C1B5;
+    --color-sand: #DCD4C7;
+    --color-border-subtle: rgba(37, 39, 36, 0.12);
+    --color-border-dark: rgba(243, 240, 233, 0.14);
+
+    /* Functional semantic mappings */
+    --bg-page: var(--color-offwhite);
+    --text-primary: var(--color-charcoal);
+    --text-muted: var(--color-olive);
+    --text-light: var(--color-offwhite);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-offwhite);
+    color: var(--color-charcoal);
+  }
+
+  body {
+    background-color: var(--color-offwhite);
+    color: var(--color-charcoal);
+    font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Serif Headline Font Family */
+  .font-serif-headline {
+    font-family: 'Cormorant Garamond', 'Frank Ruhl Libre', Georgia, serif;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  [dir="rtl"] .font-serif-headline {
+    font-family: 'Frank Ruhl Libre', 'Cormorant Garamond', 'David Libre', serif;
+  }
+
+  /* Hebrew Body Font */
+  .font-hebrew {
+    font-family: 'Assistant', 'Heebo', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-english {
+    font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  ::selection {
+    background: #252724;
+    color: #F3F0E9;
+  }
+}
+
+/* Editorial line clamp & hairline borders */
+.border-stone-hairline {
+  border-color: rgba(200, 193, 181, 0.45);
+}
+
+.border-charcoal-hairline {
+  border-color: rgba(37, 39, 36, 0.15);
+}
+
+.border-light-hairline {
+  border-color: rgba(243, 240, 233, 0.15);
+}
+
+/* Subtle organic grain overlay */
+.bg-warm-grain {
+  background-color: #F3F0E9;
+  background-image: radial-gradient(rgba(37, 39, 36, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Dark tactile grain */
+.bg-dark-grain {
+  background-color: #151515;
+  background-image: radial-gradient(rgba(243, 240, 233, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Clean Custom Scrollbar matching Warm Off-White / Charcoal */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EAE5DB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C1B5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #565A50;
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 140" fill="none">
+  <!-- OUTLIER Mountain Ridge Symbol (Light) -->
+  <g transform="translate(85, 6)">
+    <!-- Main Sweeping Ridge Silhouette -->
+    <path 
+      d="M 10 66 C 36 58 66 34 94 13 C 96 11.5 98.5 11.5 100.5 13 C 126 33 154 54 180 66 C 166 60 142 43 118 26 C 102 14.5 96.5 14.5 93 17.5 C 75 33.5 42 55 10 66 Z" 
+      fill="#F3F0E9" 
+    />
+    <!-- Subtle Architectural Shadow Facet on Left Flank -->
+    <path 
+      d="M 36 57 C 60 43 82 27 95 13.5 C 92 18 83 29 72 39 C 56 50.5 42 55.5 36 57 Z" 
+      fill="#C8C1B5" 
+      opacity="0.35" 
+    />
+  </g>
+
+  <!-- Wordmark: OUTLIER -->
+  <text 
+    x="180" 
+    y="104" 
+    text-anchor="middle" 
+    font-family="'Manrope', 'Inter', -apple-system, sans-serif" 
+    font-size="22" 
+    font-weight="500" 
+    letter-spacing="0.38em" 
+    fill="#F3F0E9"
+  >OUTLIER</text>
+
+  <!-- Tagline: WE CREATE WAYS IN. -->
+  <text 
+    x="180" 
+    y="124" 
+    text-anchor="middle" 
+    font-family="'Manrope', 'Inter', -apple-system, sans-serif" 
+    font-size="7.5" 
+    font-weight="500" 
+    letter-spacing="0.28em" 
+    fill="#C8C1B5"
+  >WE CREATE WAYS IN.</text>
+</svg>
