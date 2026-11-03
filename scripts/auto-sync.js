@@ -65,7 +65,7 @@ function syncToGitHub() {
 }
 
 // Watch key folders
-const watchTargets = ['app', 'components', 'config', 'content', 'public', 'package.json', 'README.md'];
+const watchTargets = ['app', 'components', 'config', 'content', 'public', 'package.json', 'package-lock.json', 'README.md'];
 
 watchTargets.forEach((target) => {
   const fullPath = path.join(ROOT_DIR, target);
