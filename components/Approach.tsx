@@ -2,25 +2,24 @@
 
 import React, { useState } from 'react';
 import { useLanguage } from './LanguageContext';
-import OutlierLogo from './OutlierLogo';
 
 export default function Approach() {
   const { t, isRtl } = useLanguage();
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section id="approach" className="py-24 sm:py-36 bg-[#F3F0E9] text-[#252724] border-t border-[#C8C1B5]/60 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="approach" className="py-16 sm:py-36 bg-[#F3F0E9] text-[#252724] border-t border-[#C8C1B5]/60 relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16 sm:mb-24">
-          <div className="text-[11px] font-mono uppercase tracking-[0.28em] text-[#565A50] mb-4">
+        <div className="max-w-3xl mb-12 sm:mb-24">
+          <div className="text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.28em] text-[#565A50] mb-3 sm:mb-4">
             {t.approach.sectionBadge}
           </div>
-          <h2 className="font-serif-headline text-4xl sm:text-6xl font-normal text-[#252724] tracking-tight leading-[1.1] mb-6">
+          <h2 className="font-serif-headline text-3xl sm:text-6xl font-normal text-[#252724] tracking-tight leading-[1.1] mb-4 sm:mb-6">
             {t.approach.headline}
           </h2>
-          <p className="text-base sm:text-lg text-[#565A50] leading-relaxed max-w-2xl font-normal">
+          <p className="text-sm sm:text-lg text-[#565A50] leading-relaxed max-w-2xl font-normal">
             {t.approach.intro}
           </p>
         </div>
@@ -133,22 +132,22 @@ export default function Approach() {
 
         </div>
 
-        {/* Mobile View: Vertical Editorial Timeline */}
+        {/* Mobile View: Vertical Editorial Timeline with RTL/LTR Support */}
         <div className="block lg:hidden relative">
-          <div className="absolute top-0 bottom-0 start-5 w-[1px] bg-[#C8C1B5]" />
+          <div className="absolute top-0 bottom-0 start-4.5 w-[1px] bg-[#C8C1B5]" />
 
-          <div className="space-y-6 relative">
+          <div className="space-y-4 relative">
             {t.approach.stages.map((stage) => (
-              <div key={stage.step} className="flex items-start gap-4 sm:gap-5">
-                <div className="w-10 h-10 rounded-full bg-[#EAE5DB] border border-[#252724] flex items-center justify-center font-mono text-xs font-bold text-[#252724] flex-shrink-0 z-10 shadow-sm">
+              <div key={stage.step} className="flex items-start gap-3.5">
+                <div className="w-9 h-9 rounded-full bg-[#EAE5DB] border border-[#252724] flex items-center justify-center font-mono text-xs font-bold text-[#252724] flex-shrink-0 z-10 shadow-sm mt-0.5">
                   {stage.step}
                 </div>
 
-                <div className="p-5 sm:p-6 rounded-xl bg-[#EAE5DB] border border-[#C8C1B5] flex-1">
-                  <span className="text-xs font-mono uppercase text-[#565A50] font-semibold tracking-wider">
+                <div className="p-4 sm:p-5 rounded-xl bg-[#EAE5DB] border border-[#C8C1B5] flex-1">
+                  <span className="text-[11px] font-mono uppercase text-[#565A50] font-semibold tracking-wider block mb-1">
                     {stage.name}
                   </span>
-                  <p className="font-serif-headline text-lg sm:text-xl text-[#252724] mt-2 leading-relaxed">
+                  <p className="font-serif-headline text-base sm:text-lg text-[#252724] leading-snug">
                     {stage.description}
                   </p>
                 </div>
